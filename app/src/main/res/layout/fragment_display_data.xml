@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.keerthana.chatbot.Display_data">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:elevation="5dp"
+        android:textSize="14dp"
+        android:textColor="#F57C00"
+        android:onClick="insert"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:elevation="5dp"
+        android:textSize="14dp"
+        android:textColor="#F57C00"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="delRem"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
